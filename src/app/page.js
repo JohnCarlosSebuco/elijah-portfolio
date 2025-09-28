@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { 
   FiGithub, 
@@ -109,7 +110,7 @@ export default function Home() {
               >
                 <div className="avatar-glow" aria-hidden="true" />
                 <div className="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-cyan-400/20 to-blue-500/20 bg-cover bg-center ring-1 ring-cyan-400/40 flex items-center justify-center">
-                  <img src="/pfp.webp" alt="Elijah Rivero" className="w-full h-full object-cover" />
+                  <Image src="/pfp.webp" alt="Elijah Rivero" width={200} height={200} className="w-full h-full object-cover" priority />
                 </div>
               </motion.div>
               
@@ -456,7 +457,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4, type: "spring", stiffness: 100 }}
             viewport={{ once: true }}
           >
-            I'm currently building new things. This space will showcase them soon — stay tuned!
+            I&apos;m currently building new things. This space will showcase them soon — stay tuned!
           </motion.p>
         </motion.div>
 
@@ -510,7 +511,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2, type: "spring", stiffness: 100 }}
             viewport={{ once: true }}
           >
-            Ready to start a project or just want to chat? Let's connect!
+            Ready to start a project or just want to chat? Let&apos;s connect!
           </motion.p>
         </motion.div>
 
